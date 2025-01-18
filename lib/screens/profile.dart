@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:healstreak/screens/survey/survey.dart';
 class ProfileHelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class ProfileHelpPage extends StatelessWidget {
                         ),
                         SizedBox(height: 8),
                         Text(
-                          '#Name',
+                          (_name),
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.black54,

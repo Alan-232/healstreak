@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:healstreak/screens/onboarding/login_screen.dart';
 void main() {
   runApp(MyApp());
 }
@@ -53,6 +53,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightGreenAccent[100],
       appBar: AppBar(
         title: Text('Login Page'),
       ),
@@ -83,6 +84,13 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: _login,
               child: Text('Login'),
             ),
+            ElevatedButton(onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfileHelpPage()),
+              );
+
+            }, child: Text('Maybe Later'))
           ],
         ),
       ),
