@@ -1,7 +1,47 @@
 import 'package:flutter/material.dart';
 
-class survey_screen extends StatelessWidget {
-  const survey_screen({super.key});
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SurveyPage(),
+    );
+  }
+}
+
+class SurveyPage extends StatefulWidget {
+  @override
+  _SurveyPageState createState() => _SurveyPageState();
+}
+
+class _SurveyPageState extends State<SurveyPage> {
+  final _formKey = GlobalKey<FormState>();
+  String? _name;
+  int? _age;
+
+  void _submitSurvey() {
+    if (_formKey.currentState?.validate() ?? false) {
+      _formKey.currentState?.save();
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Survey Submitted'),
+          content: Text('Thank you, $_name! Age: $_age'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,10 +98,5 @@ class survey_screen extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-
-);
   }
 }
