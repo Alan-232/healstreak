@@ -23,7 +23,24 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.lightGreenAccent[100],
+      body:SafeArea(child: Container(
+        child:
+            Text('Heal Streak',
+        textAlign: TextAlign.center,
+        style:
+
+        TextStyle(
+          fontWeight:FontWeight.bold,
+
+
+          color: Colors.white
+        )
+          ,),)
+
+      ),
+    );
   }
 }
 
