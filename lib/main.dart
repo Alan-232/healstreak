@@ -28,7 +28,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightGreenAccent[100],
       body:SafeArea(child: Container(
-        decoration: ,
         width: 500,
         height: 100,
         color: Colors.white,
