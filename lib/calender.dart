@@ -75,7 +75,8 @@ class _StreakCalendarScreenState extends State<StreakCalendarScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildInfoCard("CURRENT STREAK", "$_currentStreak Days", Colors.orange),
+                _buildInfoCard(
+                    "CURRENT STREAK", "$_currentStreak Days", Colors.orange),
                 _buildInfoCard("TARGET", "$_targetStreak Days", Colors.green),
               ],
             ),
@@ -86,7 +87,8 @@ class _StreakCalendarScreenState extends State<StreakCalendarScreen> {
               firstDay: DateTime.utc(2020, 1, 1),
               lastDay: DateTime.utc(2030, 12, 31),
               selectedDayPredicate: (day) => _streakDays[day] == true,
-              onDaySelected: (selectedDay, focusedDay) => _toggleDay(selectedDay),
+              onDaySelected: (selectedDay, focusedDay) =>
+                  _toggleDay(selectedDay),
               calendarStyle: CalendarStyle(
                 todayDecoration: BoxDecoration(
                   color: Colors.green.shade300,
