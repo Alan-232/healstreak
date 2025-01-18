@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:healstreak/calender.dart';
-import 'package:healstreak/screens/survey/survey.dart';
+// import 'package:healstreak/calender.dart';
+import 'package:healstreak/screens/survey/login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      backgroundColor: Colors.lightGreenAccent[100],
+      body:
+
+      Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.blueAccent, Colors.lightBlue], // Adjust theme colors

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:healstreak/screens/onboarding/login_screen.dart';
+// import 'package:healstreak/calender.dart';
+import 'package:healstreak/screens/profile.dart';
 void main() {
   runApp(MyApp());
 }
@@ -121,10 +122,7 @@ class _SurveyPageState extends State<SurveyPage> {
               Center(
                 child: ElevatedButton(
                   onPressed: (){
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => LoginPage()),
-                    );
+                   Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>profile()));
                   },
                   child: Text('Submit'),
                 ),

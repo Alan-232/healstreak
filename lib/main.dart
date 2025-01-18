@@ -1,9 +1,6 @@
-import 'dart:ffi';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healstreak/screens/onboarding/welcome_screen.dart';
-import 'package:healstreak/screens/survey/survey.dart';
+import 'package:healstreak/screens/survey/login.dart';
 void main(){
   runApp(MyApp());
 }
@@ -13,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.lightGreenAccent,
 
@@ -45,7 +43,7 @@ class HomeScreen extends StatelessWidget {
           fontWeight:FontWeight.bold,
           fontSize: 60,
           color: Colors.black,
-          fontFamily: 'Righteous',
+          //fontFamily: 'Righteous',
         )
           ,),
         
