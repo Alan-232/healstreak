@@ -99,7 +99,8 @@ class _SurveyPageState extends State<SurveyPage> {
                   }
                   return null;
                 },
-                onSaved: (value) => _name = value, //name variable
+                onSaved: (value) => _name = value,
+                //name variable
               ),
               SizedBox(height: 16),
               TextFormField(
