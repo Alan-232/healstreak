@@ -3,7 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healstreak/screens/onboarding/welcome_screen.dart';
-
+import 'package:healstreak/screens/survey/survey.dart';
 void main(){
   runApp(MyApp());
 }

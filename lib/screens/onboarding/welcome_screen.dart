@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healstreak/calender.dart';
+import 'package:healstreak/screens/survey/survey.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -71,7 +72,7 @@ class WelcomeScreen extends StatelessWidget {
             ElevatedButton(onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => streakpage()),
+                MaterialPageRoute(builder: (context) => SurveyPage()),
               );
             },child: Text( 'click me'),),
 
