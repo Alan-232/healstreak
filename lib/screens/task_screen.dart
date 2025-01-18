@@ -22,7 +22,7 @@ class _DailyTaskScreenState extends State<DailyTaskScreen> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        color: Color(0xFFE8F5E9), // Mint green background
+        color: Colors.lightGreenAccent[100], // Mint green background
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
           children: [
