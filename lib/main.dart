@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +28,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightGreenAccent[100],
       body:SafeArea(child: Container(
+        width: 500,
+        height: 100,
+        color: Colors.white,
         child:
             Text('Heal Streak',
         textAlign: TextAlign.center,
@@ -33,11 +38,12 @@ class HomeScreen extends StatelessWidget {
 
         TextStyle(
           fontWeight:FontWeight.bold,
-
-
-          color: Colors.white
+          fontSize: 60,
+          color: Colors.grey,
+          fontFamily: 'Righteous',
         )
           ,),)
+
 
       ),
     );
