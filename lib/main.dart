@@ -3,7 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healstreak/screens/onboarding/welcome_screen.dart';
-
+import 'package:healstreak/screens/survey/survey.dart';
 void main(){
   runApp(MyApp());
 }
@@ -30,7 +30,8 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.lightGreenAccent[100],
 
       body:SafeArea(child: Center(
-        child:Column(children :[
+        child:Column( mainAxisSize: MainAxisSize.min,
+          children :[
 
       Container(
         width: 500,
@@ -40,7 +41,6 @@ class HomeScreen extends StatelessWidget {
             Text('Heal Streak',
         textAlign: TextAlign.center,
         style:
-
         TextStyle(
           fontWeight:FontWeight.bold,
           fontSize: 60,
@@ -48,13 +48,20 @@ class HomeScreen extends StatelessWidget {
           fontFamily: 'Righteous',
         )
           ,),
+        
       ),
+          Text('Your Path To Wellness starts Here ',
+              style: TextStyle(
+                fontSize: 20,
+
+              )
+            ),
           ElevatedButton(onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => WelcomeScreen()),
+              MaterialPageRoute(builder: (context) => SurveyPage()),
             );
-          }, child: Text("Go") )
+          }, child: Text("Get Started") )
       
         ],),
 

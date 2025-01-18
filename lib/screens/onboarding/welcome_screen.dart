@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healstreak/calender.dart';
+import 'package:healstreak/screens/survey/survey.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -32,7 +34,7 @@ class WelcomeScreen extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 5),
 
             // Subtitle
             Text(
@@ -43,7 +45,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 10
+            ),
 
             // Get Started Button
             ElevatedButton(
@@ -54,7 +57,7 @@ class WelcomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 backgroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
               child: Text(
@@ -66,6 +69,13 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            ElevatedButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SurveyPage()),
+              );
+            },child: Text( 'click me'),),
+
           ],
         ),
       ),
