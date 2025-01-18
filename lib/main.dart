@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:healstreak/screens/onboarding/welcome_screen.dart';
 import 'package:healstreak/screens/survey/login.dart';
 void main(){
   runApp(MyApp());
