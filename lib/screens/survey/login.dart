@@ -75,20 +75,20 @@ class _SurveyPageState extends State<SurveyPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            'assets/avatar1.png', // Replace with your asset paths
-                            height: 60,
-                          ),
-                          const SizedBox(width: 16),
-                          Image.asset(
-                            'assets/avatar2.png',
-                            height: 60,
-                          ),
-                          const SizedBox(width: 16),
-                          Image.asset(
-                            'assets/avatar3.png',
-                            height: 60,
-                          ),
+                          // Image.asset(
+                          //   'assets/avatar1.png', // Replace with your asset paths
+                          //   height: 60,
+                          // ),
+                          // const SizedBox(width: 16),
+                          // Image.asset(
+                          //   'assets/avatar2.png',
+                          //   height: 60,
+                          // ),
+                          // const SizedBox(width: 16),
+                          // Image.asset(
+                          //   'assets/avatar3.png',
+                          //   height: 60,
+                          // ),
                         ],
                       ),
                       const SizedBox(height: 16),
