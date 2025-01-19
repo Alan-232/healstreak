@@ -150,7 +150,7 @@ class _SurveyPageState extends State<SurveyPage> {
                 ElevatedButton(
                   onPressed: _submitSurvey,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                    backgroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -159,7 +159,7 @@ class _SurveyPageState extends State<SurveyPage> {
                     padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
                     child: Text(
                       'Create Profile',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      style: TextStyle(fontSize: 18, color: Colors.black),
                     ),
                   ),
                 ),
